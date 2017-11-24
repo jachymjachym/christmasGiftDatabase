@@ -1,0 +1,324 @@
+@green: #6cdf9a;
+@red: #ff6a6b;
+@grey: #eaeaea;
+@grey2: #f7f7f7;
+@grey3: #c9c9c9;
+@white: #ffffff;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+
+    @media screen and (min-width: 1920px){
+      font-size: 24px;
+    }
+}
+
+.row {
+  margin-left: -1em;
+  margin-right: -1em;
+  overflow: hidden;
+}
+.row > * {
+  padding: 0 1em;
+}
+
+.col-xs-12 {
+  width: 100%;
+}
+.col-xs-6 {
+  width: 50%;
+  float: left;
+}
+.col-xs-4 {
+  width: 33.3333%;
+  float: left;
+}
+.col-xs-3 {
+  width: 25%;
+  float: left;
+}
+.col-xs-2 {
+  width: 16.6666%;
+  float: left;
+}
+
+@media screen and (min-width: 768px){
+  .col-sm-12 {
+    width: 100%;
+  }
+  .col-sm-6 {
+    width: 50%;
+    float: left;
+  }
+  .col-sm-4 {
+    width: 33.3333%;
+    float: left;
+  }
+  .col-sm-3 {
+    width: 25%;
+    float: left;
+  }
+  .col-sm-2 {
+    width: 16.6666%;
+    float: left;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .col-md-12 {
+    width: 100%;
+  }
+  .col-md-6 {
+    width: 50%;
+    float: left;
+  }
+  .col-md-4 {
+    width: 33.3333%;
+    float: left;
+  }
+  .col-md-3 {
+    width: 25%;
+    float: left;
+  }
+  .col-md-2 {
+    width: 16.6666%;
+    float: left;
+  }
+}
+
+@media screen and (min-width: 1300px){
+  .col-lg-12 {
+    width: 100%;
+  }
+  .col-lg-6 {
+    width: 50%;
+    float: left;
+  }
+  .col-lg-4 {
+    width: 33.3333%;
+    float: left;
+  }
+  .col-lg-3 {
+    width: 25%;
+    float: left;
+  }
+  .col-lg-2 {
+    width: 16.6666%;
+    float: left;
+  }
+}
+
+.marginTopXS {
+  margin-top: 0.5em;
+}
+.marginBottomXS {
+  margin-bottom: 0.5em;
+}
+.marginTopS {
+  margin-top: 1em;
+}
+.marginBottomS {
+  margin-bottom: 1em;
+}
+.marginTopM {
+  margin-top: 1.5em;
+}
+.marginBottomM {
+  margin-bottom: 1.5em;
+}
+.marginTopL {
+  margin-top: 2em;
+}
+.marginBottomL {
+  margin-bottom: 2em;
+}
+
+.paddingTopXS {
+  padding-top: 0.5em;
+}
+.paddingBottomXS {
+  padding-bottom: 0.5em;
+}
+.paddingTopS {
+  padding-top: 1em;
+}
+.paddingBottomS {
+  padding-bottom: 1em;
+}
+.paddingTopM {
+  padding-top: 1.5em;
+}
+.paddingBottomM {
+  padding-bottom: 1.5em;
+}
+.paddingTopL {
+  padding-top: 2em;
+}
+.paddingBottomL {
+  padding-bottom: 2em;
+}
+
+.borderBottom {
+  border-bottom: 1px solid @grey;
+}
+.borderTop {
+  border-top: 1px solid @grey;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 1px 10px;
+  padding: 1em;
+}
+header > div {
+  font-weight: 100;
+  line-height: 2;
+}
+header button {
+  outline: none;
+  border: 1px solid;
+  border-radius: 5px;
+  background: transparent;
+  font-size: 1em;
+  width: auto;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.main {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.credentials {
+  max-width: 30em;
+  margin: auto;
+}
+.credentials label,
+.credentials input {
+  display: block;
+}
+.credentials .error {
+  border: 1px solid @red;
+}
+.credentials-tabs {
+  display: flex;
+  text-align: center;
+  border: 2px solid @grey3;
+}
+.credentials-tabs div {
+  width: 50%;
+  padding: 0.5em;
+  color: @grey3;
+}
+
+.credentials-tabs div:hover,
+.credentials-tabs .tab-selected {
+  background: @grey3;
+  color: @white;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 110em;
+
+  @media screen and (min-width: 992px){
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin: auto;
+  }
+}
+
+.section {
+  width: 100%;
+
+  @media screen and (min-width: 992px){
+    width: 45%;
+  }
+}
+
+
+h1 {
+  font-size: 1.5em;
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+input, button, select {
+  width: 100%
+}
+input,
+select {
+  padding: 0.5em;
+  border: 1px solid @grey;
+  font-size: 1em;
+}
+input:hover,
+input:focus {
+  border: 1px solid @green;
+  outline: none;
+}
+
+button {
+  outline: none;
+  border: 1px solid @green;
+  border-radius: 4px;
+  background: @white;
+  font-size: 1em;
+  color: @green;
+  padding: 0.5em;
+}
+button:hover {
+  background: @green;
+  color: #ffffff;
+}
+button.delete {
+  border: 1px solid @red;
+  color: @red;
+}
+button.delete:hover {
+  background: @red;
+  color: #ffffff;
+}
+
+.myWishesBox > div:nth-child(odd) {
+  background: @grey2;
+}
+
+
+.wishAddBox h1 {
+  font-size: 2.5em;
+}
+.wishAddBox-input {
+  display: block;
+}
+
+.toBuyBox:last-child {
+  border: none;
+}
+.toBuyBox label {
+  display: block;
+}
+.toBuyBox span,
+.toBuyBox textarea {
+  display: block;
+  line-height: 1.8;
+  font-size: 1em;
+  width: 100%;
+}
+.toBuyBox textarea {
+  border: 1px solid @grey;
+  resize: none;
+}
