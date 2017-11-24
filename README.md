@@ -1,4 +1,5 @@
-# react-firebase christmas app starterpack
+# react-firebase christmas app starterpack  
+https://yarnpkg.com/en/
 
 ```
 yarn version
@@ -43,12 +44,12 @@ builds application to production
 <script>
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyC2NGMumb9R8nasylwZE2vhq9IYS06BvWI",
-    authDomain: "vanockagithubexample-e9f9b.firebaseapp.com",
-    databaseURL: "https://vanockagithubexample-e9f9b.firebaseio.com",
-    projectId: "vanockagithubexample-e9f9b",
+    apiKey: "your-apiKey",
+    authDomain: "your-authDomain",
+    databaseURL: "your-databaseURL",
+    projectId: "your-projectId",
     storageBucket: "",
-    messagingSenderId: "1083470429413"
+    messagingSenderId: "your-messagingSenderId"
   };
   firebase.initializeApp(config);
 </script>
@@ -67,7 +68,7 @@ user3@gmail.com
 test1234
 ```
 test user
-```
+
 http://christmas-app-demo.surge.sh/
-```
+
 demo
