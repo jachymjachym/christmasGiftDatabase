@@ -24,10 +24,10 @@ yarn prod
 ```
 builds application to production  
 
-##1.create account on firebase
-##2.go to firebase console
-##3.add a new project
-##4.configure database rules (database -> rules)
+## 1.create account on firebase
+## 2.go to firebase console
+## 3.add a new project
+## 4.configure database rules (database -> rules)
 ```
 {
   "rules": {
@@ -36,8 +36,8 @@ builds application to production
   }
 }
 ```
-##5.set sign-in method to email/password (authentication -> sign-in method)
-##6.replace demo firebase config with your project config. Find it in Settings -> Add firebase to your web app
+## 5.set sign-in method to email/password (authentication -> sign-in method)
+## 6.replace demo firebase config with your project config. Find it in Settings -> Add firebase to your web app
 ```
 <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
 <script>
