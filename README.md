@@ -53,9 +53,9 @@ builds application to production
   firebase.initializeApp(config);
 </script>
 ```
-##7.thats it
+## 7.thats it
 
-#This is testing demo, feel free to play with it
+# This is testing demo, feel free to play with it
 ```
 user1@gmail.com
 test1234
