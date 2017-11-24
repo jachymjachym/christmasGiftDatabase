@@ -38,7 +38,7 @@ builds application to production
 }
 ```
 ## 5.set sign-in method to email/password (authentication -> sign-in method)
-## 6.replace demo firebase config with your project config. Find it in Settings -> Add firebase to your web app
+## 6.replace demo firebase config with your project config in index.html file. Find it in Settings -> Add firebase to your web app
 ```
 <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
 <script>
